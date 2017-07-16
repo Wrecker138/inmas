@@ -1,0 +1,205 @@
+doctype html
+html(lang="ru-RU")
+    head 
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="assets/css/styles.css")
+    body
+    
+.block-wrapper
+    .header
+        div.header__logo
+            img(src="assets/img/logo.png")
+            p.header__text Ремонт. Теперь это просто! 
+        div.header__infoblock
+            div.header__btn
+                a(href="#repair").button.button--header Конструктор ремонта
+            div.header__contacts
+                a.header__city Екатеринбург
+                p.header__phone +7 (343) 200-30-30
+section.headpromo
+        .headpromo__photo
+            .block-wrapper
+                .headpromo__text Правильный ремонт квартиры  с соблюдением бюджета  за 60 дней.
+                .headpromo__subtext Удобный дизайн. Качественные материалы. Отлаженный процесс.  
+        .headpromo__box.box
+            .box__title Идеально продуманный ремонт квартиры для комфортного проживания!
+            .box__text Мы круглосуточно фотографируем и снимаем квартиру, чтобы вы контролировали ход ремонта, не выходя из дома.Работы ведутся по регламенту, поэтому каждый этап мы завершаем в срок.
+        
+include blocks/slider
+
+.block-wrapper
+    section.repair#repiair
+        .repair__box
+            p.repair__text Создайте свой ремонт в нашем конструкторе
+            a.button.button--repair.button--big Конструктор ремонта
+        .repair__choose
+            h2.repair__title.repair__title--colored Вы выбираете сами
+            .repair__gallery.gallery
+                    .gallery__item 
+                        .gallery__img
+                            img(src="assets/img/repair_1.jpg")
+                        .gallery__option Перепланировку
+                    .gallery__item 
+                        .gallery__img
+                            img(src="assets/img/repair_2.jpg")
+                        .gallery__option Стиль
+                    .gallery__item 
+                        .gallery__img
+                            img(src="assets/img/repair_3.jpg")
+                        .gallery__option Материалы
+                    .gallery__item 
+                        .gallery__img
+                            img(src="assets/img/repair_4.jpg")
+                        .gallery__option Опции 
+                    .gallery__item 
+                        .gallery__img
+                            img(src="assets/img/repair_5.jpg")
+                        .gallery__option Мебель
+        .repair__process
+            h2.repair__title.repair__title--process Процесс ремонта
+            .repair__advantages.advantages
+                .advantages__left
+                    .advantages__item
+                        span.advantages__text Высочайшее качество исполнения
+                        .advantages__text  У нас работают проверенные мастера с большим опытом.Ведется постоянная сертификация персонала
+                    .advantages__item
+                        span.advantages__text Гарантия соблюдения сроков 
+                        .advantages__text Все процессы тщательно регламентированы и просчитаны - ведутся в системе Overboss. Мы всегда сдаем квартирку в срок!
+                .advantages__right
+                    .advantages__item
+                         span.advantages__text Качественные материалы 
+                        .advantages__text Мы не экономим на материалах, используем только лучшие, экологически чистые товары.
+                    .advantages__item
+                         span.advantages__text Оптимизация бюджета 
+                        .advantages__text Мы работаем только с проверенными материалами и закупаем исключительно у производителя, что исключает перерасход и переплату.
+                 .advantages__item.advantages__item--wide
+                     span.advantages__text Гарантийное обслуживание  
+                     .advantages__text Мы выполненяем бесплатные гарантийные и не гарантийные случаи в течении 24 месяцев, а также оказывваем дополнительные услуги по обслуживанию инженерного оборудования 
+        .repair__bonus
+            h2.repair__title.repair__title--bonus Вместе с ремонтом вы получите 
+            .repair__perks.perks
+                .perks__item
+                    .perks__img
+                        img(src="assets/img/pasport.png")
+                    .perks__text Паспорт выполненного объекта с исполнительными схемами и актами скрытых работ
+                .perks__item
+                    .perks__img
+                         img(src="assets/img/photo.png")
+                    .perks__text Фото всех процессов ремонта
+                .perks__item
+                    .perks__img
+                         img(src="assets/img/instructions.png")
+                    .perks__text Инструкции по правильному уходу за полами, стенами, потолками, окнами и инженерными сетями 
+                .perks__item
+                    .perks__img
+                         img(src="assets/img/video.png")
+                    .perks__text Видеоотчет (ускоренный) на весь процесс производства работ от демонтажа до клининга помещения
+            .repair__insurance Cтраховка квартиры на 24 месяца в подарок
+            
+
+
+section.showroom
+    .block-wrapper
+        .showroom__container.container
+            .container__row
+                .container__left
+                    .container__title Посетите наш шоу-рум
+                    .container__text Это возможность увидеть вживую процесс создания ремонта, степень проработки деталей и мелочей в квартире, используемые материалы, особенности технологии «В Массиве»
+                .container__right
+                    a.button.buttom--check Записаться
+            .showroom__map
+                .showroom__dot
+                    img(src="assets/img/dot.png")
+          .showroom__about.about
+                .about__title Почему «В Массиве» лучший выбор 
+                .about__block.about__block--left    
+                    .about__item
+                        span Экономим на дизайн-проекте 
+                        .about__text С нами не придется тратить деньги на это, так как мы используем готовые дизайн-проекты
+                     .about__item
+                        span Экономим на мтериалах  
+                        .about__text Мы сами закупаем материалы у проверенных поставщиков по оптовым ценам
+                     .about__item
+                        span Страхуем риски 
+                        .about__text В течении двух лет после сдачи ремонта мы устраняем любые поломки,отклеившиеся обои, вздутый ламинат, сломавшуюся розетку и т.д.
+                .about__block.about__block--right   
+                     .about__item
+                        span Ведем онлайн-наблюдение 
+                        .about__text Мы ведем круглосуточное фото и видеонаблюдение, чтобы вы следили за ремонтом в онлайне.
+                     .about__item
+                        span Соблюдаем сроки 
+                        .about__text Мы ведем работу по регламентам, которые помогают завершать каждый этап в срок
+                     .about__item
+                        span Делаем качественно и экологично 
+                        .about__text Наш стаж — десять лет. Мы используем качественные и экологичные материалы и делаем ремонт по современным методикам и технологиям.
+            
+
+.block-wrapper
+    section.stages
+        h2.stages__title Этапы ремонта
+        .stages__stick 
+            img(src='assets/img/stick.png')
+        ol.stages__list
+            li
+                span Замер помещения 
+                .stages__text Замерщик приедет в течении дня. Он бесплатно замерит помещение и заполнит бриф-лист.
+             li
+                span Коммерческое предложение 
+                .stages__text В течении следующего дня мы бесплатно подготовим коммерческое предложение с конечной стоимостью и вирутальным турам по выбранным вариантам.
+             li
+                span Подписание договора 
+                .stages__text После согласования коммерческого мы пригласим вас к нам в офис для подписания договора.
+             li
+                span Приемка квартиры 
+                .stages__text Мы принимаем у вас квартиру, вывозим мебель на свой склад и предоставляем вам жилье на время ремонта.
+             li
+                span Проведение ремонта 
+                .stages__text Ремонтируем квартиру в течении 60 дней, по завершению ремонта вывозим за собой мусор и чистим квартиру.
+             li
+                span Сдача работы 
+                .stages__text Как только вы примете работу мы возвращаем в квартиру мебель и устанавливаем элементы декора и интерьера.
+             li
+                span Гарантийное обслуживания 
+                .stages__text В течении двух лет мы устраняем любые поломки за два дня с момента обращения.
+        .stages__order
+            a.button.button--big.button--order Заказать замер и смету
+
+.block-wrapper
+    section.cost
+        h2.cost__title Сколько будет стоить ремонт в кредит и рассрочку?
+        .cost__credit
+            span В кредит
+            .cost__text Это возможность увидеть вживую процесс создания ремонта, степень проработки деталей и мелочей в квартире, используемые материалы, особенности технологии «В Массиве»
+        .cost__period
+            span В рассрочку
+            .cost__text Это возможность увидеть вживую процесс создания ремонта, степень проработки деталей и мелочей в квартире, используемые материалы, особенности технологии «В Массиве»
+        .cost__bank Альфа-банк — наш банк-партнер
+        .cost__price
+            a.button.button--price Получить индивидуальный расчёт
+
+section.map
+    .block-wrapper
+        .map__callback
+            form.callback
+                label.callback__title Обратный звонок 
+                label.form__label Имя и фамилия
+                input.form__input
+                label.form__label Телефон
+                input.form__input
+                label.form__label Менеджер
+                .callback__manager
+                    .callback__img.img__one
+                   
+                .callback__manager
+                    .callback__img.img__two
+                .callback__button   
+                   button(type="submit").button.button--callback Перезвонить мне
+        .map__pointer
+            span Офис продаж
+            .map__text ул. Тверитина, 12
+include blocks/footer
+
+        script(src="assets/js/libs/jquery-3.0.0.min.js")
+        script(src="assets/js/libs/jquery.carouFredSel-6.2.1.js")
+        script(src="assets/js/libs/slider.js")
